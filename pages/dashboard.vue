@@ -53,9 +53,9 @@
                     <div class="text-3xl">
                         45$
                     </div>
-                    <div class="flex items-center space-x-1 text-sm font-medium text-red-600">
+                    <div class="flex items-center space-x-1 text-sm font-medium text-green-600">
                         <span>7$ increase</span>
-                        <TrendingDownIcon class="w-4 h-4" />
+                        <TrendingUpIcon class="w-4 h-4" />
                     </div>
                 </div>
             </ElementsCard>
@@ -73,12 +73,39 @@
                     </div>
                 </div>
             </ElementsCard>
+            <ElementsCard>
+                <div class="space-y-2">
+                    <div class="flex items-center space-x-2 text-sm font-medium text-slate-500 dark:text-slate-200">
+                        <span>Used icons</span>
+                    </div>
+                    <div class="text-3xl">
+                        46/60
+                    </div>
+                    <NuxtLink to="/twitch/icons" class="flex items-center space-x-1 text-sm font-medium text-blue-600 hover:underline">
+                        <span>Set your icons here</span>
+                        <LinkIcon class="w-4 h-4" />
+                    </NuxtLink>
+                </div>
+            </ElementsCard>
+            <ElementsCard>
+                <div class="space-y-2">
+                    <div class="flex items-center space-x-2 text-sm font-medium text-slate-500 dark:text-slate-200">
+                        <span>Active subscriptions</span>
+                    </div>
+                    <div class="text-3xl">
+                        3
+                    </div>
+                    <NuxtLink to="/twitch/icons" class="flex items-center space-x-1 text-sm font-medium">
+                        <span>Streamers you are subscribed to</span>
+                    </NuxtLink>
+                </div>
+            </ElementsCard>
         </div>
     </div>
 </template>
 
 <script setup>
-import { TrendingUpIcon, TrendingDownIcon } from '@heroicons/vue/solid'
+import { TrendingUpIcon, TrendingDownIcon, LinkIcon } from '@heroicons/vue/solid'
 
 definePageMeta({
     middleware: ['auth'],
@@ -86,7 +113,7 @@ definePageMeta({
 })
 
 useHead({
-    title: 'Profile',
+    title: 'Dashboard',
     meta: [
         { name: 'description', content: 'Profile page' },
     ],
