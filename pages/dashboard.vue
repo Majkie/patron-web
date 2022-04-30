@@ -3,6 +3,12 @@
 
         <h1 class="text-2xl font-bold tracking-tight md:text-3xl">Dashboard</h1>
 
+        <ElementsCardNotifcation status="info">
+            <p>
+                To see emotes and subscribers badge, you need to <NuxtLink to="/settings/accounts" class="underline">connect your Twitch account here.</NuxtLink>
+            </p>
+        </ElementsCardNotifcation>
+
         <div class="grid md:grid-cols-2 gap-6">
             <ElementsCard>
                 <div class="space-y-2">
@@ -76,12 +82,26 @@
             <ElementsCard>
                 <div class="space-y-2">
                     <div class="flex items-center space-x-2 text-sm font-medium text-slate-500 dark:text-slate-200">
-                        <span>Used icons</span>
+                        <span>Used subscriber emotes</span>
                     </div>
                     <div class="text-3xl">
                         46/60
                     </div>
-                    <NuxtLink to="/twitch/icons" class="flex items-center space-x-1 text-sm font-medium text-blue-600 hover:underline">
+                    <NuxtLink to="/twitch/chat-emotes" class="flex items-center space-x-1 text-sm font-medium text-blue-600 hover:underline">
+                        <span>Set your icons here</span>
+                        <LinkIcon class="w-4 h-4" />
+                    </NuxtLink>
+                </div>
+            </ElementsCard>
+            <ElementsCard>
+                <div class="space-y-2">
+                    <div class="flex items-center space-x-2 text-sm font-medium text-slate-500 dark:text-slate-200">
+                        <span>Used global emotes</span>
+                    </div>
+                    <div class="text-3xl">
+                        21/30
+                    </div>
+                    <NuxtLink to="/twitch/chat-emotes" class="flex items-center space-x-1 text-sm font-medium text-blue-600 hover:underline">
                         <span>Set your icons here</span>
                         <LinkIcon class="w-4 h-4" />
                     </NuxtLink>

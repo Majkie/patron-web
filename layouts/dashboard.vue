@@ -9,7 +9,7 @@
                     <h3 class="hidden px-6 pb-3 text-xs font-semibold leading-4 tracking-wider text-slate-500 dark:text-slate-200 uppercase md:block">{{ titles[index] }}</h3>
 
                     <ul class="space-y-2 w-full">
-                        <li v-for="item in menu">
+                        <li v-for="(item, index) in menu" :key="'item-' + index">
                             <NuxtLink :to="item.path" v-slot="{ isActive }" class="flex relative w-full items-center px-6 py-3 text-sm font-medium leading-5 transition duration-150 ease-in-out group hover:text-slate-900 hover:bg-slate-100 focus:outline-none focus:text-slate-900 focus:bg-slate-100 dark:focus:bg-slate-700 dark:hover:text-slate-200 dark:text-slate-300 dark:hover:bg-slate-700">
                                 <component :is="item.icon" :class="isActive ? 'text-slate-400 dark:text-slate-200' : 'text-slate-500 dark:text-slate-300'" class="flex-shrink-0 w-5 h-5 mr-3 -ml-1" />
                                 <span :class="isActive ? 'text-slate-500 dark:text-slate-100' : 'text-slate-400 dark:text-slate-300'" class="hidden truncate md:inline-block">
@@ -79,9 +79,9 @@ const menus = ref([
   ],
   [
     {
-      name: 'Chat Icons',
+      name: 'Chat Emotes',
       icon: PhotographIcon,
-      path: '/twitch/chat-icons',
+      path: '/twitch/chat-emotes',
     },
     {
       name: 'Subscriber icons',

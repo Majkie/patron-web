@@ -1,6 +1,10 @@
 <template>
-    <div>
-        Settings
+    <div class="space-y-6">
+        <h1 class="text-2xl font-bold tracking-tight md:text-3xl">Settings</h1>
+    
+        <ElementsCard>
+            
+        </ElementsCard>
     </div>
 </template>
 

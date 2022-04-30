@@ -3,9 +3,6 @@
     class="fixed w-full top-0 bg-transparent px-2 sm:px-4 py-4 z-40 border-b border-slate-200 dark:border-slate-800 bg-clip-padding backdrop-filter backdrop-blur-xl bg-opacity-60">
     <div class="container flex flex-wrap justify-between items-center mx-auto">
       <a href="https://flowbite.com" class="flex items-center">
-        <div class="mr-3 h-6 sm:h-9">
-
-        </div>
         <span class="self-center text-xl font-semibold whitespace-nowrap text-black dark:text-white">Flowbite</span>
       </a>
       <button type="button"
