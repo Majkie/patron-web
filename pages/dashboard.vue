@@ -115,7 +115,7 @@
                     <div class="text-3xl">
                         3
                     </div>
-                    <NuxtLink to="/twitch/icons" class="flex items-center space-x-1 text-sm font-medium">
+                    <NuxtLink to="/billing/subscriptions" class="flex items-center space-x-1 text-sm font-medium">
                         <span>Streamers you are subscribed to</span>
                     </NuxtLink>
                 </div>

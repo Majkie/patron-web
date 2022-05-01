@@ -68,6 +68,11 @@ const subscriptionOptions = [
         value: 'both',
         label: 'Both',
         description: 'Viewers will be able to subscribe on Patreon or our payment gateway.'
+    },
+    {
+        value: 'none',
+        label: 'None',
+        description: 'Viewers will not be able to subscribe to your channel and/or get subscription benefits. You can still use channel emotes.'
     }
 ]   
 

@@ -2,7 +2,7 @@
     <div class="space-y-6">
         <div>
             <h1 class="text-2xl font-bold tracking-tight md:text-3xl">Plans</h1>
-            <p class="text-sm">This function is relevant only if you use our payment gateway for subscriptions. Otherwise you can ignore default settings here.</p>
+            <p class="text-sm">This function is relevant only if you use our payment gateway for subscriptions. Otherwise, ignore default settings here.</p>
         </div>
 
         <ElementsCard>

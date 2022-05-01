@@ -56,7 +56,7 @@
                     </NuxtLink>
                 </div>
             </TabsTab>
-            <TabsTab title="Global emotes 21/30">
+            <TabsTab title="Channel emotes 21/30">
                 <div class="grid grid-cols-5 gap-4">
                     <NuxtLink to="/twitch/chat-emotes/1">
                         <ElementsCard>
