@@ -43,8 +43,8 @@ const menu = ref([
         path: '/about'
     },
     {
-        name: 'Contact',
-        path: '/contact'
+        name: 'Pro',
+        path: '/pro'
     }
 ])
 </script>
