@@ -1,7 +1,10 @@
 export default defineNuxtRouteMiddleware((to, from) => {
-    // const authenticated = useAuth()
+    const authenticated = useAuth()
     
-    // if (authenticated.isAuthenticated) {
-    //     return navigateTo('/')
-    // }
+    console.log('Guest middleware');
+    
+
+    if (authenticated.isAuthenticated) {
+        return navigateTo('/dashboard')
+    }
 })

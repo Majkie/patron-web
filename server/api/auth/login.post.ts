@@ -3,8 +3,6 @@ import axios from 'axios';
 export default defineEventHandler(async (event) => {
     const body = await useBody(event)
 
-    console.log(body);
-    
     try {
         const response = await axios.post('http://patron.test/api/auth/login', body)
         

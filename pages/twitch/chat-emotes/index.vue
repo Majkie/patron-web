@@ -8,7 +8,7 @@
             <div class="space-y-1">
                 <label for="name">Name</label>
                 <input type="text" id="name" placeholder="deeClap" class="w-full p-2 rounded-lg dark:bg-slate-700 dark:border-slate-600 dark:text-slate-300 dark:placeholder-slate-500">
-                <p class="text-sm text-slate-500 dark:text-slate-400">Emote codes can be letters and numbers. It must use at least 1 capital letter and be at least 5 characters.</p>
+                <p class="text-sm text-slate-500 dark:text-slate-400">Emote codes can be letters and numbers. It must use at least 1 capital letter and be at least 5 characters and maximum of 40 characters.</p>
             </div>
 
             <div class="space-y-1">
@@ -40,7 +40,7 @@
         </ElementsCard>
 
         <Tabs>
-            <TabsTab title="Subscriber emotes 46/60">
+            <TabsTab title="Subscriber emotes 1/60">
                 <div class="grid grid-cols-5 gap-4">
                     <NuxtLink to="/twitch/chat-emotes/1">
                         <ElementsCard>
@@ -56,7 +56,7 @@
                     </NuxtLink>
                 </div>
             </TabsTab>
-            <TabsTab title="Channel emotes 21/30">
+            <TabsTab title="Channel emotes 2/30">
                 <div class="grid grid-cols-5 gap-4">
                     <NuxtLink to="/twitch/chat-emotes/1">
                         <ElementsCard>
