@@ -23,17 +23,9 @@
                             class="w-full p-2 rounded-lg dark:bg-slate-700" required />
                     </div>
                     <div>
-                        <label for="password_confirmation">Password confirmation</label>
-                        <input id="password_confirmation" type="password" v-model="form.password_confirmation"
+                        <label for="passwordConfirmation">Password confirmation</label>
+                        <input id="passwordConfirmation" type="password" v-model="form.passwordConfirmation"
                             class="w-full p-2 rounded-lg dark:bg-slate-700" required />
-                    </div>
-                    <div class="flex items-center">
-                        <input id="link-checkbox" type="checkbox" v-model="form.toc"
-                            class="w-4 h-4 text-blue-600 bg-slate-100 border-slate-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-slate-800 focus:ring-2 dark:bg-slate-700 dark:border-slate-600"
-                            required>
-                        <label for="link-checkbox" class="ml-2 text-sm font-medium text-slate-900 dark:text-slate-300">I
-                            agree with the <a href="#" class="text-blue-600 dark:text-blue-500 hover:underline">terms
-                                and conditions</a>.</label>
                     </div>
                     <div>
                         <button type="submit"
@@ -61,6 +53,10 @@
                         class="text-slate-600 hover:text-slate-900 dark:hover:text-slate-200 dark:text-slate-300">
                         Already have an account?</NuxtLink>
                 </div>
+
+                <div class="flex items-center justify-center">
+                    <span for="link-checkbox" class="ml-2 text-sm font-medium text-slate-900 dark:text-slate-300">By signing up you agree to the <a href="#" class="text-blue-600 dark:text-blue-500 hover:underline">terms and conditions</a>.</span>
+                </div>
             </div>
         </div>
     </div>
@@ -81,7 +77,7 @@ const form = reactive({
     name: '',
     email: '',
     password: '',
-    password_confirmation: '',
+    passwordConfirmation: '',
     toc: false,
 })
 
@@ -94,7 +90,7 @@ function register() {
             auth.login(res.user)
             auth.token = res.token
     
-            navigateTo('/')
+            navigateTo('/dashboard')
         }
     })
 }

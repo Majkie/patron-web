@@ -60,7 +60,7 @@ function login() {
     }).then(res => {
         if (res.status === 200) {
             auth.login(res.user)
-            auth.token = res.token
+            auth.token = res.access_token
 
             navigateTo('/dashboard')
         }

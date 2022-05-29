@@ -4,20 +4,21 @@ export default defineEventHandler(async (event) => {
     const body = await useBody(event)
 
     try {
-        const response = await axios.post('http://patron.test/api/auth/register', body)
+        const response = await axios.post('http://localhost:8000/auth/register', body)
 
-        setCookie(event, 'api_token', response.data.meta.token, {
-            maxAge: 60 * 60 * 24 * 14,
+        setCookie(event, 'api_token', response.data.access_token, {
+            maxAge: 30 * 24 * 60 * 60,
             httpOnly: true,
             sameSite: 'lax',
+            secure: true,
             path: '/',
         })
         
         if (response.status === 201) {
             return {
                 status: 201,
-                user: response.data.data,
-                token: response.data.meta.token,
+                user: response.data.user,
+                token: response.data.access_token,
             }
         }
     } catch (err) {
