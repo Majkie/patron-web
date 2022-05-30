@@ -12,9 +12,7 @@ export default defineEventHandler(async (event) => {
             sameSite: 'lax',
             secure: true,
             path: '/',
-        })
-
-        console.log(response.status);
+        });
         
         if (response.status === 200) {
             return {
