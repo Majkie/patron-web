@@ -22,7 +22,7 @@ onMounted(() => {
             JSON.stringify({
                 event: 'join',
                 data: {
-                    channel: 'majciiik',
+                    channel: '184503403',
                     user: 'majciiik',
                     pro: false,
                 },
